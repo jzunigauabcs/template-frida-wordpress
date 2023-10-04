@@ -6,7 +6,7 @@
 <body style="background: none;">
 
   <div id="boton-boletos" class="position-fixed top-50 end-0 translate-middle-y z-3">
-    <a href="http://localhost/frida-wp/eventos/frida-khalo-recorrido/" class="btn btn-primary border-0 btn-lg" style="font-family: 'Poppins'; background-color: rgba(0, 0, 0, 0); background-image: url(<?php bloginfo('template_directory');?>/public/images/boton-vertical.png); background-size: 100% 100%; background-repeat: no-repeat; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+    <a href="#" class="btn btn-primary border-0 btn-lg" style="font-family: 'Poppins'; background-color: rgba(0, 0, 0, 0); background-image: url(<?php bloginfo('template_directory');?>/public/images/boton-vertical.png); background-size: 100% 100%; background-repeat: no-repeat; border-top-right-radius: 0; border-bottom-right-radius: 0;">
         <div class="row px-3 ">
             B<br>
             O<br>
