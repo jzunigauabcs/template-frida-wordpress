@@ -1,0 +1,565 @@
+@font-face {
+  font-family: "Poppins";
+  src:url("../fonts/Poppins-SemiBold.otf");
+}
+@font-face {
+  font-family: "Lobster";
+  src:url("../fonts/Lobster 1.4.otf");
+}
+@font-face {
+  font-family: "Poppins-regular";
+  src:url("../fonts/Poppins-Regular.ttf");
+}
+:root {
+  --color-1: #DA188D;
+  --color-2: #FFFFFF;
+  --color-3: #0062A6;
+  --color-4: #363637;
+  --border-color-1: #FF353E;
+  --border-color-2: #C02739;
+  --border-color-3: #02665c;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/Landing2560x1440.jpg);
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px;
+}
+header .logo {
+  position: absolute;
+  top: 0;
+}
+header .logo img, .logo-img {
+  width: 200px;
+}
+header .title {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 300px;
+  margin-right: 100px;
+  text-align: center;
+}
+header .title h1{ 
+  color: var(--color-2);
+  font-family: 'Lobster';
+  font-size: 50px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+}
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px 15px 0;
+
+}
+.square {
+  border: 12px solid transparent;
+  width: 300px;
+  height: 378px;
+  box-sizing: border-box;
+  position: relative;
+}
+.square:before {
+  content: '';
+  position: absolute;
+  border-top: 12px solid var(--border-color-1);
+  border-right: 12px solid var(--border-color-1);
+  border-left: 12px solid var(--border-color-1);
+  width: calc(100% + 24px);
+  height: 72px;
+  top: -12px;
+  left: -12px;
+}
+.frame-1 {
+  width: 100%;
+  height: 100%;
+  border: 5px solid transparent; 
+}
+.frame-1:before {
+  content: '';
+  position: absolute;
+  border-top: 5px solid var(--border-color-2);
+  border-right: 5px solid var(--border-color-2);
+  border-left: 5px solid var(--border-color-2);
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+}
+.frame-2 {
+  border: 8px solid var(--border-color-3);
+  width: 100%;
+  height: 100%;
+}
+ .square > .frame-1 > .frame-2 > div {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  font-family: 'Lobster';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+.square > .frame-1 > .frame-2 > div h2{
+  font-size: 34px;
+}
+
+.presentation span {
+  color: var(--color-3);  
+}
+.autorretrato {
+  width: 100%;
+  height: 100%;
+}
+.soon h2 {
+  font-family: 'Lobster';
+  font-size: 38px;
+  color: var(--color-1);
+  text-align: center;
+}
+.soon p {
+  font-family: 'Poppins';
+  font-size: 12px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px 15px 0;
+}
+.banco-mexico {
+  width: 100px;
+}
+.banco-mexico img {
+  max-width: 100%;
+  height: auto;
+}
+.social .contacto {
+  text-align: center;
+}
+.social .contacto a {
+  color: var(--color-2);
+  font-size: 32px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.social img {
+  width: 30px;
+}
+.museo-frida-kahlo-logo {
+  width: 70px;
+  position: absolute;
+  right: 14%;
+}
+.museo-frida-kahlo-logo img{
+  max-width: 100%;
+  height: auto;
+}
+
+.section-wall-bg{
+  background-image: url(../images/blue-wall-\(2\)-2560x1440.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.boton{
+  font-family: 'Poppins';
+  background-color: none;
+  background-image: url(../images/boton-vertical.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.slider-p{
+  font-family: 'Poppins';
+  color: var(--color-2);
+  font-size: 20px;
+}
+
+.too-much-text{
+  font-size: 16px;
+}
+
+.services-poppins{
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.menu-option{
+  font-family: 'Poppins';
+  color: var(--color-2);
+  font-size: 5px;
+}
+.pink-title{
+  color: var(--color-1)
+}
+.white-title{
+  color: var(--color-2);
+}
+
+.section-padding{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width:1400px){
+  .frames{
+    max-width: 2000 !important;
+  }
+}
+
+@media screen and (max-width: 2300px) {
+  .museo-frida-kahlo-logo {
+    right: 12%;
+  }
+  
+}
+@media screen and (max-width: 1920px) {
+  .museo-frida-kahlo-logo {
+    right: 10%;
+  }
+  .services-poppins{
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 1799px) {
+  .museo-frida-kahlo-logo {
+    right: 14%;
+  }
+  .services-poppins{
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  header .title h1 {
+    font-size: 60px;
+  }
+  .square {
+    width:400px;
+    height: 504px;
+  }
+  .square > .frame-1 > .frame-2 > div h2{
+    font-size: 38px;
+  }
+  .soon p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1920px) and (max-height: 944px) {
+  .square {
+    width: 350px;
+    height: 444px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .museo-frida-kahlo-logo {
+    right: 12%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .museo-frida-kahlo-logo {
+    right: 10%;
+  }
+  .section-wall-bg{
+    background-image: url(../images/blue-wall-1350x1000.png);
+  }
+}
+@media (min-width: 1280px) and (max-height: 800px) {
+  main {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 1199px){
+  header .title h1 {
+    font-size: 45px;
+  }
+  .square {
+    width: 250px;
+    height: 312px;
+  }
+  .square > .frame-1 > .frame-2 > div h2 {
+    font-size: 25px;
+  }
+  .social .contacto a {
+    font-size: 25px;
+  }
+  .museo-frida-kahlo-logo {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    background-image: url(../images/Landing1179x2556.jpg);
+  }
+  header {
+    height: 150px;
+  }
+  main {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .information {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .museo-frida-kahlo-logo {
+    position: relative;
+    right: 0;
+    margin-top: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 150px;
+  }
+  header .logo img {
+    width: 170px;
+  }
+  header .title {
+    margin-left: 200px;
+  }
+  header .title h1 {
+    font-size: 35px;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .information {
+    flex-direction: column;
+  }
+  .soon h2 {
+    font-size: 28px;
+  }
+  .menu-option p{
+   font-size: 14px; 
+  }
+  .section-wall-bg{
+    background-image: url(../images/blue-wall-1179x2556.png);
+
+  }
+}
+@media (max-height: 760px) and (max-width: 1480px) {
+    header .title h1 {
+      font-size: 50px;
+    }
+    main {
+      margin-top: 120px;
+  }
+}
+@media screen and (max-width: 575px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header .logo {
+    position: relative;
+  }
+  header .title {
+    margin: 0;
+    margin-top: 15px;
+  }
+  header .title h1 {
+    font-size: 25px;
+  }
+  main {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+  .square {
+    margin-bottom: 20px;
+  }
+  .social .contacto a {
+    font-size: 20px;
+  }
+  .menu-option p{
+    font-size: 10px; 
+   }
+  .txt-correo{
+    font-size: 15px;
+  }
+  .txt-titulo{
+    font-size: 40px;
+  }
+  .btn-prev{
+    left: 80% !important  ;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .title h1 {
+    font-size: 20px;
+  }
+  .social .contacto a {
+    font-size: 16px;
+  }
+  
+}
+
+
+h1 {
+  font-size: 60px;
+}
+
+h5 {
+  font-size: 25px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+/* EXPOSICION */
+#exposicion p {
+  font-size: 25px;
+}
+
+/* TU VISITA  */
+#tu-visita {
+  font-size: 18px;
+}
+
+#small-letter {
+  font-size: 14px;
+}
+
+/* BOLETOS */
+#boletos-parte-1 {
+  font-size: 22px;
+}
+
+#boletos-parte-2 {
+  font-size: 16px;
+}
+
+/* GRUPOS */
+#grupos {
+  font-size: 20px;
+}
+
+/* CONTACTANOS */
+#contactanos {
+  font-size: 20px;
+}
+
+#contactanos-terminos-condiciones {
+  font-size: 15px;
+}
+
+/* FACTURACION */
+#facturacion {
+  font-size: 18px;
+}
+
+#facturacion-importante {
+  font-size: 15px;
+}
+
+
+/* Media query para pantallas de ancho máximo de 600px */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+  
+  h6 {
+    font-size: 16px;
+  }
+
+  /* EXPOSICION */
+  #exposicion p {
+    font-size: 15px;
+  }
+
+  /* TU VISITA  */
+  #tu-visita {
+    font-size: 15px;
+  }
+  #small-letter {
+    font-size: 12px;
+  }
+
+  /* BOLETOS */
+  #boletos-parte-1 {
+    font-size: 15px;
+  }
+  #boletos-parte-2 {
+    font-size: 15px;
+  }
+
+  /* GRUPOS */
+  #grupos {
+    font-size: 15px;
+  }
+
+  /* CONTACTANOS */
+  #contactanos {
+    font-size: 15px;
+  }
+  #contactanos-terminos-condiciones {
+    font-size: 12px;
+  }
+
+  /* FACTURACION */
+  #facturacion {
+    font-size: 15px;
+  }
+  #facturacion-importante {
+    font-size: 12px;
+  }
+
+  /* FOOTER */
+  h4 {
+    font-size: 18px;
+  }
+}
