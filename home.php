@@ -343,7 +343,7 @@
 
             <div class="col-sm-12 col-md-12 col-lg-6 px-5">
                 <div class="row">
-                    <img src="<?php bloginfo('template_directory');?>/public/images/Calendario.png" class="img-fluid" alt="">
+                    <img src="<?php bloginfo('template_directory');?>/public/images/Calendario.png" class="img-fluid d-none" alt="">
                 </div>
             </div>
         </div>
@@ -694,6 +694,10 @@
   </div>
   <!-- FOOTER END -->
 
+  <!-- Modal de AVISO DE Privacidad -->
+  <?php include('layouts/modales/modal.aviso.php') ?>
+
+  <!-- scritps -->
   <?php include('layouts/scripts.template.php') ?>
 </body>
 </html>

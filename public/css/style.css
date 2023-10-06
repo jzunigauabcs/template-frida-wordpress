@@ -240,6 +240,11 @@ footer {
   padding-bottom: 100px;
 }
 
+.no-button-style{
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 @media (min-width:1400px){
   .frames{
     max-width: 2000 !important;
