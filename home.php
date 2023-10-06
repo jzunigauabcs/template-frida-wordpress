@@ -327,7 +327,7 @@
                 <hr style="border-width: 2px; color: white"/>
             </div>
 
-            <div class="col-sm-12 col-md-12 col-lg-6 px-5 text-white pb-4" style="font-family: poppins;">
+            <div class="col-sm-12 col-md-12 col-lg-12 px-5 text-white pb-4" style="font-family: poppins;">
                 <div class="row">
                     <p>Elige el horario en el que quieras visitar la exposición Frida en su Jardín Secreto, realiza la compra, descarga tu boleto y preséntate directo en la fila para el acceso:</p>
                 </div>
