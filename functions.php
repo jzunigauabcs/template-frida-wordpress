@@ -792,3 +792,20 @@ if ( is_array( $ozeum_required_plugins ) ) {
 		}
 	}
 }
+
+function whpi_currency_symbol( $currency_symbol, $currency ) {
+
+    switch( $currency ) {
+        case 'USD':
+            $currency_symbol = 'USD $';
+            break;
+        case 'MXN':
+            $currency_symbol = 'MXN $';
+            break;
+	}
+
+    return $currency_symbol;
+
+}
+add_filter('woocommerce_currency_symbol', 'whpi_currency_symbol', 30, 2);
+
