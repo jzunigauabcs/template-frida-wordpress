@@ -46,7 +46,7 @@
         <div class="col">
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary no-button-style p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <p class="white-poppins mt-3" style="font-size: 14px;">Términos de Uso</p>
+            <p class="white-poppins mt-3" style="font-size: 14px;">Políticas de Cancelación</p>
           </button>
 
           <!-- Modal Térmios de Uso-->
@@ -54,7 +54,7 @@
             <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Términos de Uso</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Políticas de Cancelación</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="text-align: start;">
@@ -64,7 +64,7 @@
                     Por favor tome nota de los siguientes: <br><br>
                      
                     
-                    <b>TÉRMINOS DE USO</b><br><br>
+                    <b>Políticas de Cancelación</b><br><br>
                      
                     <b>1.</b>  Todas las ventas que se hagan por el sistema son definitivas, NO se aceptan: cancelaciones de compra, cambios o reembolsos. <br><br>
                      
