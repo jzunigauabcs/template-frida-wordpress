@@ -820,3 +820,4 @@ function remove_featured_image($html, $attachment_id ) {
        return $html;
 }
 
+remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
