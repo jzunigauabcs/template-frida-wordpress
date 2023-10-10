@@ -823,3 +823,22 @@ function remove_featured_image($html, $attachment_id ) {
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 
 remove_action ('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+
+// add_filter('gettext',  'translate_text');
+// add_filter('ngettext',  'translate_text');
+ 
+// function translate_text($translated) {
+//      $translated = str_ireplace('From',  'Desde',  $translated);
+// 	 $translated = str_ireplace('BOOK NOW',  'Reserva Ahora',  $translated);
+// 	 $translated = str_ireplace('Choose a date above to see available times.',  'Elija una fecha arriba para ver los horarios disponibles.',  $translated);
+// 	 $translated = str_ireplace('Times are in America/Mazatlan',  'Los tiempos son en América/Mazatlán',  $translated);
+//      return $translated;
+// }
+
+
+add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_home_text' );
+function wcc_change_breadcrumb_home_text( $defaults ) {
+    // Change the breadcrumb home text from 'Home' to 'Apartment'
+	$defaults['home'] = 'Apartment';
+	return $defaults;
+}
