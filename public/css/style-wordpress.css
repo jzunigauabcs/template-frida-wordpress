@@ -28,3 +28,11 @@
 .wc-booking-summary .wc-booking-summary-actions a:last-child{
 	display:none;
 }
+
+.button.jupiterx-continue-shopping {
+	display: none !important;
+	}
+	
+	.woocommerce-page .woocommerce-message .button {
+		display:none;
+	}
