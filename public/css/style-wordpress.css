@@ -11,9 +11,7 @@
 	display:none;
 }
 
-.scheme_default .woocommerce .button, .scheme_default .woocommerce-page .button, .scheme_default .woocommerce a.button, .scheme_default .woocommerce-page a.button{
-	display:none;
-}
+
 
 .scheme_dark .menu_mobile_inner .search_mobile .search_submit{
 	display:none
