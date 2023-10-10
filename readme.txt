@@ -80,3 +80,7 @@ IV. Resources
    License: watermark distribution only
    
 Other custom js files and images are our own creation and is licensed under the same license as this theme.
+
+
+Siempre que vayamos a Poner Display none o quitar algo mediante css y este esta en el worodpress de Woocommerce debemos ponerlo
+aqui en el style-wordpress.css y eso pasarlo al panel donde dice apariencia y personalizar y despues vamos a css adicional y pegamos todo eso..

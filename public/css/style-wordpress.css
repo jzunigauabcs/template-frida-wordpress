@@ -1,0 +1,32 @@
+.woocommerce.sidebar_hide #content div.product div.summary, .woocommerce-page.sidebar_hide #content div.product div.summary, .woocommerce.sidebar_hide div.product div.summary, .woocommerce-page.sidebar_hide div.product div.summary{
+	width:100%
+}
+
+.woocommerce div.product div.images img{
+	display:none
+}
+
+
+.search_style_fullscreen .search_form{
+	display:none;
+}
+
+.scheme_default .woocommerce .button, .scheme_default .woocommerce-page .button, .scheme_default .woocommerce a.button, .scheme_default .woocommerce-page a.button{
+	display:none;
+}
+
+.scheme_dark .menu_mobile_inner .search_mobile .search_submit{
+	display:none
+}
+
+.menu_mobile .search_mobile .search_field{
+	display:none
+}
+
+.mobile_device .menu_mobile .socials_mobile, .mobile_layout .menu_mobile .socials_mobile {
+ 	display:none;
+}
+
+.wc-booking-summary .wc-booking-summary-actions a:last-child{
+	display:none;
+}
