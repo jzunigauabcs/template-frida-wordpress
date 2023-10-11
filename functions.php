@@ -820,6 +820,8 @@ function remove_featured_image($html, $attachment_id ) {
        return $html;
 }
 
+add_filter( 'woocommerce_cart_item_thumbnail', '__return_false' );
+
 remove_action ('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
 
 remove_action ('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
