@@ -70,7 +70,17 @@ if ( ozeum_need_page_title() ) {
 									>
 									<?php
 								}
-								echo wp_kses_post( $ozeum_blog_title_text );
+
+								// Mostrar El Carrito
+								if ( wp_kses_post( $ozeum_blog_title_text ) == "Cart" ) {
+									echo "carrito";
+								} else if (wp_kses_post( $ozeum_blog_title_text ) == "Checkout") {
+									echo "Finaliza Tu Compra";
+								}
+
+								
+							
+								
 								?>
 							</h1>
 							<?php
