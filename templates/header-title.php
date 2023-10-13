@@ -97,7 +97,15 @@ if ( ozeum_need_page_title() ) {
 
 							?>
 						</div>
-						
+						<?php
+
+						// Breadcrumbs
+						ob_start();
+						do_action( 'ozeum_action_breadcrumbs' );
+						$ozeum_breadcrumbs = ob_get_contents();
+						ob_end_clean();
+					
+						?>
 					</div>
 				</div>
 			</div>
