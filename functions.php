@@ -828,21 +828,18 @@ remove_action ('woocommerce_after_single_product_summary', 'woocommerce_output_p
 
 remove_action( 'woocommerce_order_details_after_order_table', 'woocommerce_order_again_button' );
 
-// add_filter('gettext',  'translate_text');
-// add_filter('ngettext',  'translate_text');
- 
-// function translate_text($translated) {
-//      $translated = str_ireplace('From',  'Desde',  $translated);
-// 	 $translated = str_ireplace('BOOK NOW',  'Reserva Ahora',  $translated);
-// 	 $translated = str_ireplace('Choose a date above to see available times.',  'Elija una fecha arriba para ver los horarios disponibles.',  $translated);
-// 	 $translated = str_ireplace('Times are in America/Mazatlan',  'Los tiempos son en América/Mazatlán',  $translated);
-//      return $translated;
-// }
 
+add_filter( 'woocommerce_cart_item_quantity', 'replace_cart_quantity_for_bookings', 20, 3 );
+function replace_cart_quantity_for_bookings( $quantity, $cart_item_key, $cart_item ){
+    // Only for bookable product items
+    if( isset($cart_item['booking']) && isset($cart_item['booking']['_qty']) ){
+        $quantity  = '<span style="text-align:center; display:inline-block; line-height:10px">'.$cart_item['booking']['_qty'].'<br>
+        <small>(' . __('persons','woocommerce') . ')</small><span>';
+    }
 
-add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_home_text' );
-function wcc_change_breadcrumb_home_text( $defaults ) {
-    // Change the breadcrumb home text from 'Home' to 'Apartment'
-	$defaults['home'] = 'Apartment';
-	return $defaults;
+    return $quantity;
 }
+
+
+
+
