@@ -15,59 +15,24 @@
   --color-2: #FFFFFF;
   --color-3: #0062A6;
   --color-4: #363637;
+  --color-5: RGB(202, 203, 200);
   --border-color-1: #FF353E;
   --border-color-2: #C02739;
   --border-color-3: #02665c;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../images/Landing2560x1440.jpg);
 
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100% 100%;
-  min-height: 100vh;
+.lobster{
+  font-family: 'Lobster';
 }
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 200px;
+.poppins{
+  font-family: 'Poppins';
 }
-header .logo {
-  position: absolute;
-  top: 0;
+.poppins-regular{
+  font-family: 'Poppins-regular';
 }
+
 header .logo img, .logo-img {
   width: 200px;
-}
-header .title {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  margin-left: 300px;
-  margin-right: 100px;
-  text-align: center;
-}
-header .title h1{ 
-  color: var(--color-2);
-  font-family: 'Lobster';
-  font-size: 50px;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  justify-content: space-evenly;
-}
-.information {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 15px 15px 0;
-
 }
 .square {
   border: 12px solid transparent;
@@ -109,7 +74,7 @@ main {
   height: 100%;
 }
  .square > .frame-1 > .frame-2 > div {
-  background-color: var(--color-2);
+  background-color: hsl(35, 22%, 85%);
   color: var(--color-1);
   font-family: 'Lobster';
   display: flex;
@@ -125,61 +90,16 @@ main {
   font-size: 34px;
 }
 
+.square > .frame-1 > .frame-2 > div p{
+  font-size: 20px;
+}
+
 .presentation span {
   color: var(--color-3);  
 }
 .autorretrato {
   width: 100%;
   height: 100%;
-}
-.soon h2 {
-  font-family: 'Lobster';
-  font-size: 38px;
-  color: var(--color-1);
-  text-align: center;
-}
-.soon p {
-  font-family: 'Poppins';
-  font-size: 12px;
-}
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 15px 15px 0;
-}
-.banco-mexico {
-  width: 100px;
-}
-.banco-mexico img {
-  max-width: 100%;
-  height: auto;
-}
-.social .contacto {
-  text-align: center;
-}
-.social .contacto a {
-  color: var(--color-2);
-  font-size: 32px;
-  margin-bottom: 5px;
-  text-align: center;
-  text-decoration: none;
-}
-.social ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.social ul li {
-  display: inline-block;
-  padding: 10px;
-}
-.social img {
-  width: 30px;
 }
 .museo-frida-kahlo-logo {
   width: 70px;
@@ -192,7 +112,7 @@ footer {
 }
 
 .section-wall-bg{
-  background-image: url(../images/blue-wall-\(2\)-2560x1440.png);
+  background-image: url('../images/blue-wall-\(2\)-2560x1440.jpg');
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 100%;
@@ -201,7 +121,7 @@ footer {
 .boton{
   font-family: 'Poppins';
   background-color: none;
-  background-image: url(../images/boton-vertical.png);
+  background-image: url('./images/boton-vertical.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-top-right-radius: 0;
@@ -209,13 +129,9 @@ footer {
 }
 
 .slider-p{
-  font-family: 'Poppins';
+  font-family: 'Poppins-regular';
   color: var(--color-2);
   font-size: 20px;
-}
-
-.too-much-text{
-  font-size: 16px;
 }
 
 .services-poppins{
@@ -234,17 +150,103 @@ footer {
 .white-title{
   color: var(--color-2);
 }
-
+.footer-titles{
+  font-family: 'Lobster';
+  color: var(--color-1);
+}
 .section-padding{
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+.extra{
+  color: var(--color-2);
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+.white-poppins{
+  font-family: 'Poppins';
+  color: var(--color-2);
+}
+.logo-museo{
+  width: 100px;
+  height: 100px;
+}
+.icon-social{
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fondo-cuadro{
+  background-color: hsl(35, 22%, 85%);
+}
 .no-button-style{
   border: none !important;
   background-color: rgba(0, 0, 0, 0) !important;
-}
 
+}
+.stripe{
+  height: 65px;
+}
+.blue-content{
+  font-family: "Poppins";
+  color: var(--color-3);
+  font-weight: 100;
+}
+.slider-btn{
+  background-color: rgb(96, 96, 134) !important;
+  width: fit-content !important;
+}
+.bg-white{
+  background-color: var(--color-2);
+}
+.bg-pink{
+  background-color: var(--color-1);
+}
+.bg-black{
+  background-color: black;
+}
+.bg-5{
+  background-color: var(--color-5);
+  font-family: poppins-regular;
+}
+.boletos-btn{
+  background-color: transparent;
+  color: white;
+  font-family: 'Poppins';
+  background-image: url('../images/boton-vertical.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  --bs-btn-hover-bg:transparent;
+}
+.comprar-btn{
+  background-image: url('../images/boton.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 100% 100%;
+  font-family: 'Poppins';
+  width: 100%;
+  --bs-btn-hover-bg:transparent;
+}
+.btn-pink{
+  --bs-btn-hover-bg:var(--color-1);
+  --bs-btn-active-bg:var(--color-1)
+}
+.list-font{
+  font-size: 40px;
+}
+.sub-text{
+  font-size: 12px !important;
+  font-family: 'Poppins';
+}
+.fit-content{
+  width: fit-content;
+}
+.txt-align-start{
+  text-align: start;
+}
 @media (min-width:1400px){
   .frames{
     max-width: 2000 !important;
@@ -274,15 +276,16 @@ footer {
   }
 }
 @media screen and (min-width: 1800px) {
-  header .title h1 {
-    font-size: 60px;
-  }
+
   .square {
     width:400px;
     height: 504px;
   }
   .square > .frame-1 > .frame-2 > div h2{
     font-size: 38px;
+  }
+  .square > .frame-1 > .frame-2 > div p{
+    font-size: 25px;
   }
   .soon p {
     font-size: 16px;
@@ -304,18 +307,11 @@ footer {
     right: 10%;
   }
   .section-wall-bg{
-    background-image: url(../images/blue-wall-1350x1000.png);
-  }
-}
-@media (min-width: 1280px) and (max-height: 800px) {
-  main {
-    margin-bottom: 80px;
+    background-image: url('../images/blue-wall-1350x1000.png');
   }
 }
 @media screen and (max-width: 1199px){
-  header .title h1 {
-    font-size: 45px;
-  }
+
   .square {
     width: 250px;
     height: 312px;
@@ -323,30 +319,22 @@ footer {
   .square > .frame-1 > .frame-2 > div h2 {
     font-size: 25px;
   }
+  .square > .frame-1 > .frame-2 > div p{
+    font-size: 14px;
+  }
   .social .contacto a {
     font-size: 25px;
   }
   .museo-frida-kahlo-logo {
     right: 10%;
   }
+  .too-much-text{
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  body {
-    background-image: url(../images/Landing1179x2556.jpg);
-  }
-  header {
-    height: 150px;
-  }
-  main {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
   .information {
-    flex-direction: column;
-  }
-
-  footer {
     flex-direction: column;
   }
 
@@ -359,22 +347,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    height: 150px;
-  }
+
   header .logo img {
     width: 170px;
-  }
-  header .title {
-    margin-left: 200px;
-  }
-  header .title h1 {
-    font-size: 35px;
-  }
-  main {
-    flex-direction: column;
-    margin-top: 80px;
-    margin-bottom: 80px;
   }
   .information {
     flex-direction: column;
@@ -386,7 +361,7 @@ footer {
    font-size: 14px; 
   }
   .section-wall-bg{
-    background-image: url(../images/blue-wall-1179x2556.png);
+    background-image: url('../images/blue-wall-1179x2556.jpg');
 
   }
 }
@@ -399,25 +374,11 @@ footer {
   }
 }
 @media screen and (max-width: 575px) {
-  header {
-    flex-direction: column;
-    height: auto;
-  }
+
   header .logo {
     position: relative;
   }
-  header .title {
-    margin: 0;
-    margin-top: 15px;
-  }
-  header .title h1 {
-    font-size: 25px;
-  }
-  main {
-    flex-direction: column;
-    margin-top: 80px;
-    margin-bottom: 120px;
-  }
+
   .square {
     margin-bottom: 20px;
   }
@@ -436,17 +397,40 @@ footer {
   .btn-prev{
     left: 80% !important  ;
   }
+  .extra{
+    font-size: 10px;
+  }
+  .icon-social{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
 @media screen and (max-width: 360px) {
-  header .title h1 {
-    font-size: 20px;
+  .footer-mail{
+    font-size: 14px;
   }
-  .social .contacto a {
-    font-size: 16px;
-  }
-  
 }
 
+.tu-visita-tarifas {
+  font-family: 'Lobster';
+  color: var(--color-3)
+}
+
+.linea-horizontal-blanca {
+  border-width: 2px; color: white
+}
+
+.contactanos-datos {
+  font-family: 'poppins';
+  color: var(--color-1);
+}
+
+.contactanos-direccion {
+  font-family: 'poppins';
+  font-size: 12px;
+}
 
 h1 {
   font-size: 60px;
@@ -465,7 +449,7 @@ h6 {
   font-size: 25px;
 }
 
-/* TU VISITA  */
+/* PLANEA VISITA  */
 #tu-visita {
   font-size: 18px;
 }
@@ -497,6 +481,10 @@ h6 {
   font-size: 15px;
 }
 
+#oferta-trabajo {
+  font-size: 16px;
+}
+
 /* FACTURACION */
 #facturacion {
   font-size: 18px;
@@ -526,7 +514,7 @@ h6 {
     font-size: 15px;
   }
 
-  /* TU VISITA  */
+  /* PLANEA TU VISITA  */
   #tu-visita {
     font-size: 15px;
   }
@@ -554,17 +542,23 @@ h6 {
   #contactanos-terminos-condiciones {
     font-size: 12px;
   }
-
-  /* FACTURACION */
-  #facturacion {
-    font-size: 15px;
+  #oferta-trabajo {
+    font-size: 13px;
   }
-  #facturacion-importante {
-    font-size: 12px;
-  }
-
   /* FOOTER */
   h4 {
     font-size: 18px;
+  }
+}
+
+/* Cambiar el color y el grosor del borde izquierdo */
+.custom-border-start {
+  border-left: 2px solid #DA188D; /* Cambiar el color a rojo y el grosor a 4 píxeles (ajusta según lo necesites) */
+}
+
+/* Estilo para pantallas medianas y grandes (col-md-12) */
+@media (max-width: 991px) {
+  .col-md-12.custom-border-start {
+    border-left: none; /* Oculta el borde izquierdo cuando la columna tiene col-md-12 */
   }
 }
