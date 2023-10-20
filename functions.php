@@ -810,7 +810,6 @@ function whpi_currency_symbol( $currency_symbol, $currency ) {
 add_filter('woocommerce_currency_symbol', 'whpi_currency_symbol', 30, 2);
 
 
-
 add_filter('woocommerce_single_product_image_thumbnail_html', 'remove_featured_image', 10, 2);
 function remove_featured_image($html, $attachment_id ) {
     global $post, $product;
@@ -828,18 +827,16 @@ remove_action ('woocommerce_after_single_product_summary', 'woocommerce_output_p
 
 remove_action( 'woocommerce_order_details_after_order_table', 'woocommerce_order_again_button' );
 
-
 add_filter( 'woocommerce_cart_item_quantity', 'replace_cart_quantity_for_bookings', 20, 3 );
+
 function replace_cart_quantity_for_bookings( $quantity, $cart_item_key, $cart_item ){
     // Only for bookable product items
     if( isset($cart_item['booking']) && isset($cart_item['booking']['_qty']) ){
         $quantity  = '<span style="text-align:center; display:inline-block; line-height:10px">'.$cart_item['booking']['_qty'].'<br>
-        <small>(' . __('persons','woocommerce') . ')</small><span>';
+        <small>(' . __('personas','woocommerce') . ')</small><span>';
     }
 
     return $quantity;
 }
-
-
 
 
